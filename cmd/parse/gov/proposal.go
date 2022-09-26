@@ -57,6 +57,17 @@ func proposalCmd(parseConfig *parsecmdtypes.Config) *cobra.Command {
 			// Build the gov module
 			govModule := gov.NewModule(sources.GovSource, nil, distrModule, mintModule, slashingModule, stakingModule, parseCtx.EncodingConfig.Marshaler, db)
 
+			// Update the proposal to the latest status
+			height, err := parseCtx.Node.LatestHeight()
+			if err != nil {
+				return fmt.Errorf("error while getting chain latest block height: %s", err)
+			}
+
+			err = govModule.UpdateProposal(height, proposalID)
+			if err != nil {
+				return err
+			}
+
 			err = refreshProposalDetails(parseCtx, proposalID, govModule)
 			if err != nil {
 				return err
@@ -68,17 +79,6 @@ func proposalCmd(parseConfig *parsecmdtypes.Config) *cobra.Command {
 			}
 
 			err = refreshProposalVotes(parseCtx, proposalID, govModule)
-			if err != nil {
-				return err
-			}
-
-			// Update the proposal to the latest status
-			height, err := parseCtx.Node.LatestHeight()
-			if err != nil {
-				return fmt.Errorf("error while getting chain latest block height: %s", err)
-			}
-
-			err = govModule.UpdateProposal(height, proposalID)
 			if err != nil {
 				return err
 			}

@@ -22,6 +22,7 @@ import (
 func (m *Module) UpdateProposal(height int64, id uint64) error {
 	// Get the proposal
 	proposal, err := m.source.Proposal(height, id)
+
 	if err != nil {
 		if strings.Contains(err.Error(), codes.NotFound.String()) {
 			// Handle case when a proposal is deleted from the chain (did not pass deposit period)
