@@ -2,19 +2,19 @@ package main
 
 import (
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/forbole/juno/v3/cmd"
-	initcmd "github.com/forbole/juno/v3/cmd/init"
-	parsetypes "github.com/forbole/juno/v3/cmd/parse/types"
-	startcmd "github.com/forbole/juno/v3/cmd/start"
-	"github.com/forbole/juno/v3/modules/messages"
+	"github.com/spike-engine/juno/cmd"
+	initcmd "github.com/spike-engine/juno/cmd/init"
+	parsetypes "github.com/spike-engine/juno/cmd/parse/types"
+	startcmd "github.com/spike-engine/juno/cmd/start"
+	"github.com/spike-engine/juno/modules/messages"
 
-	migratecmd "github.com/forbole/bdjuno/v3/cmd/migrate"
-	parsecmd "github.com/forbole/bdjuno/v3/cmd/parse"
+	migratecmd "github.com/spike-engine/bdjuno/v3/cmd/migrate"
+	parsecmd "github.com/spike-engine/bdjuno/v3/cmd/parse"
 
-	"github.com/forbole/bdjuno/v3/types/config"
+	"github.com/spike-engine/bdjuno/v3/types/config"
 
-	"github.com/forbole/bdjuno/v3/database"
-	"github.com/forbole/bdjuno/v3/modules"
+	"github.com/spike-engine/bdjuno/v3/database"
+	"github.com/spike-engine/bdjuno/v3/modules"
 
 	gaiaapp "github.com/cosmos/gaia/v7/app"
 	evmosapp "github.com/evmos/evmos/v6/app"

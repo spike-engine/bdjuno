@@ -3,8 +3,8 @@ package inflation
 import (
 	"fmt"
 
-	"github.com/forbole/bdjuno/v3/modules/utils"
-	"github.com/forbole/bdjuno/v3/types"
+	"github.com/spike-engine/bdjuno/v3/modules/utils"
+	"github.com/spike-engine/bdjuno/v3/types"
 
 	"github.com/go-co-op/gocron"
 	"github.com/rs/zerolog/log"

@@ -1,18 +1,18 @@
 package parse
 
 import (
-	parse "github.com/forbole/juno/v3/cmd/parse/types"
 	"github.com/spf13/cobra"
+	parse "github.com/spike-engine/juno/cmd/parse/types"
 
-	parseblocks "github.com/forbole/juno/v3/cmd/parse/blocks"
+	parseblocks "github.com/spike-engine/juno/cmd/parse/blocks"
 
-	parsegenesis "github.com/forbole/juno/v3/cmd/parse/genesis"
+	parsegenesis "github.com/spike-engine/juno/cmd/parse/genesis"
 
-	parseauth "github.com/forbole/bdjuno/v3/cmd/parse/auth"
-	parsefeegrant "github.com/forbole/bdjuno/v3/cmd/parse/feegrant"
-	parsegov "github.com/forbole/bdjuno/v3/cmd/parse/gov"
-	parsestaking "github.com/forbole/bdjuno/v3/cmd/parse/staking"
-	parsetransaction "github.com/forbole/juno/v3/cmd/parse/transactions"
+	parseauth "github.com/spike-engine/bdjuno/v3/cmd/parse/auth"
+	parsefeegrant "github.com/spike-engine/bdjuno/v3/cmd/parse/feegrant"
+	parsegov "github.com/spike-engine/bdjuno/v3/cmd/parse/gov"
+	parsestaking "github.com/spike-engine/bdjuno/v3/cmd/parse/staking"
+	parsetransaction "github.com/spike-engine/juno/cmd/parse/transactions"
 )
 
 // NewParseCmd returns the Cobra command allowing to parse some chain data without having to re-sync the whole database

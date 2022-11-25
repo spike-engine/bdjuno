@@ -1,8 +1,8 @@
 package auth
 
 import (
-	parsecmdtypes "github.com/forbole/juno/v3/cmd/parse/types"
 	"github.com/spf13/cobra"
+	parsecmdtypes "github.com/spike-engine/juno/cmd/parse/types"
 )
 
 // NewAuthCmd returns the Cobra command that allows to fix all the things related to the x/auth module

@@ -6,12 +6,12 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
 	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
-	juno "github.com/forbole/juno/v3/types"
+	juno "github.com/spike-engine/juno/types"
 
 	"github.com/rs/zerolog/log"
 	tmctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/forbole/bdjuno/v3/types"
+	"github.com/spike-engine/bdjuno/v3/types"
 )
 
 // HandleBlock implements BlockModule

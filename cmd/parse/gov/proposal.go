@@ -5,25 +5,25 @@ import (
 	"fmt"
 	"strconv"
 
-	modulestypes "github.com/forbole/bdjuno/v3/modules/types"
 	"github.com/rs/zerolog/log"
+	modulestypes "github.com/spike-engine/bdjuno/v3/modules/types"
 
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	parsecmdtypes "github.com/forbole/juno/v3/cmd/parse/types"
-	"github.com/forbole/juno/v3/types/config"
 	"github.com/spf13/cobra"
+	parsecmdtypes "github.com/spike-engine/juno/cmd/parse/types"
+	"github.com/spike-engine/juno/types/config"
 
-	"github.com/forbole/juno/v3/parser"
+	"github.com/spike-engine/juno/parser"
 
-	"github.com/forbole/bdjuno/v3/database"
-	"github.com/forbole/bdjuno/v3/modules/distribution"
-	"github.com/forbole/bdjuno/v3/modules/gov"
-	"github.com/forbole/bdjuno/v3/modules/inflation"
-	"github.com/forbole/bdjuno/v3/modules/mint"
-	"github.com/forbole/bdjuno/v3/modules/slashing"
-	"github.com/forbole/bdjuno/v3/modules/staking"
+	"github.com/spike-engine/bdjuno/v3/database"
+	"github.com/spike-engine/bdjuno/v3/modules/distribution"
+	"github.com/spike-engine/bdjuno/v3/modules/gov"
+	"github.com/spike-engine/bdjuno/v3/modules/inflation"
+	"github.com/spike-engine/bdjuno/v3/modules/mint"
+	"github.com/spike-engine/bdjuno/v3/modules/slashing"
+	"github.com/spike-engine/bdjuno/v3/modules/staking"
 
-	"github.com/forbole/bdjuno/v3/utils"
+	"github.com/spike-engine/bdjuno/v3/utils"
 )
 
 // proposalCmd returns the Cobra command allowing to fix all things related to a proposal

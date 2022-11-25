@@ -1,12 +1,12 @@
 package config
 
 import (
-	initcmd "github.com/forbole/juno/v3/cmd/init"
-	junoconfig "github.com/forbole/juno/v3/types/config"
 	"github.com/spf13/cobra"
+	initcmd "github.com/spike-engine/juno/cmd/init"
+	junoconfig "github.com/spike-engine/juno/types/config"
 	"gopkg.in/yaml.v3"
 
-	"github.com/forbole/bdjuno/v3/modules/actions"
+	"github.com/spike-engine/bdjuno/v3/modules/actions"
 )
 
 // Config represents the BDJuno configuration

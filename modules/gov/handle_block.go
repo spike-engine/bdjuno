@@ -3,7 +3,7 @@ package gov
 import (
 	"fmt"
 
-	juno "github.com/forbole/juno/v3/types"
+	juno "github.com/spike-engine/juno/types"
 
 	tmctypes "github.com/tendermint/tendermint/rpc/core/types"
 

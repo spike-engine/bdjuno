@@ -2,9 +2,9 @@ package remote
 
 import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/forbole/juno/v3/node/remote"
+	"github.com/spike-engine/juno/node/remote"
 
-	govsource "github.com/forbole/bdjuno/v3/modules/gov/source"
+	govsource "github.com/spike-engine/bdjuno/v3/modules/gov/source"
 )
 
 var (

@@ -2,13 +2,13 @@ package actions
 
 import (
 	"github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/forbole/juno/v3/modules"
-	"github.com/forbole/juno/v3/node"
-	"github.com/forbole/juno/v3/node/builder"
-	nodeconfig "github.com/forbole/juno/v3/node/config"
-	"github.com/forbole/juno/v3/types/config"
+	"github.com/spike-engine/juno/modules"
+	"github.com/spike-engine/juno/node"
+	"github.com/spike-engine/juno/node/builder"
+	nodeconfig "github.com/spike-engine/juno/node/config"
+	"github.com/spike-engine/juno/types/config"
 
-	modulestypes "github.com/forbole/bdjuno/v3/modules/types"
+	modulestypes "github.com/spike-engine/bdjuno/v3/modules/types"
 )
 
 const (

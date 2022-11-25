@@ -2,7 +2,7 @@ package distribution
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	juno "github.com/forbole/juno/v3/types"
+	juno "github.com/spike-engine/juno/types"
 
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 )

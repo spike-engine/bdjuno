@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	dbtypes "github.com/forbole/bdjuno/v3/database/types"
+	dbtypes "github.com/spike-engine/bdjuno/v3/database/types"
 
-	"github.com/forbole/bdjuno/v3/types"
 	"github.com/lib/pq"
+	"github.com/spike-engine/bdjuno/v3/types"
 )
 
 // SaveEvmosInflationParams allows to store the given params inside the database

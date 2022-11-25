@@ -1,35 +1,35 @@
 package modules
 
 import (
-	"github.com/forbole/bdjuno/v3/modules/actions"
-	"github.com/forbole/bdjuno/v3/modules/types"
+	"github.com/spike-engine/bdjuno/v3/modules/actions"
+	"github.com/spike-engine/bdjuno/v3/modules/types"
 
-	"github.com/forbole/juno/v3/modules/pruning"
-	"github.com/forbole/juno/v3/modules/telemetry"
+	"github.com/spike-engine/juno/modules/pruning"
+	"github.com/spike-engine/juno/modules/telemetry"
 
-	"github.com/forbole/bdjuno/v3/modules/slashing"
+	"github.com/spike-engine/bdjuno/v3/modules/slashing"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	jmodules "github.com/forbole/juno/v3/modules"
-	"github.com/forbole/juno/v3/modules/messages"
-	"github.com/forbole/juno/v3/modules/registrar"
+	jmodules "github.com/spike-engine/juno/modules"
+	"github.com/spike-engine/juno/modules/messages"
+	"github.com/spike-engine/juno/modules/registrar"
 
-	"github.com/forbole/bdjuno/v3/utils"
+	"github.com/spike-engine/bdjuno/v3/utils"
 
-	"github.com/forbole/bdjuno/v3/database"
-	"github.com/forbole/bdjuno/v3/modules/auth"
-	"github.com/forbole/bdjuno/v3/modules/bank"
-	"github.com/forbole/bdjuno/v3/modules/consensus"
-	"github.com/forbole/bdjuno/v3/modules/distribution"
-	"github.com/forbole/bdjuno/v3/modules/feegrant"
-	"github.com/forbole/bdjuno/v3/modules/inflation"
+	"github.com/spike-engine/bdjuno/v3/database"
+	"github.com/spike-engine/bdjuno/v3/modules/auth"
+	"github.com/spike-engine/bdjuno/v3/modules/bank"
+	"github.com/spike-engine/bdjuno/v3/modules/consensus"
+	"github.com/spike-engine/bdjuno/v3/modules/distribution"
+	"github.com/spike-engine/bdjuno/v3/modules/feegrant"
+	"github.com/spike-engine/bdjuno/v3/modules/inflation"
 
-	"github.com/forbole/bdjuno/v3/modules/gov"
-	"github.com/forbole/bdjuno/v3/modules/mint"
-	"github.com/forbole/bdjuno/v3/modules/modules"
-	"github.com/forbole/bdjuno/v3/modules/pricefeed"
-	"github.com/forbole/bdjuno/v3/modules/staking"
+	"github.com/spike-engine/bdjuno/v3/modules/gov"
+	"github.com/spike-engine/bdjuno/v3/modules/mint"
+	"github.com/spike-engine/bdjuno/v3/modules/modules"
+	"github.com/spike-engine/bdjuno/v3/modules/pricefeed"
+	"github.com/spike-engine/bdjuno/v3/modules/staking"
 )
 
 // UniqueAddressesParser returns a wrapper around the given parser that removes all duplicated addresses

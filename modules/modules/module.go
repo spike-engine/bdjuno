@@ -1,10 +1,10 @@
 package modules
 
 import (
-	"github.com/forbole/juno/v3/modules"
-	"github.com/forbole/juno/v3/types/config"
+	"github.com/spike-engine/juno/modules"
+	"github.com/spike-engine/juno/types/config"
 
-	"github.com/forbole/bdjuno/v3/database"
+	"github.com/spike-engine/bdjuno/v3/database"
 )
 
 var (
