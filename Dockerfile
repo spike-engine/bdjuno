@@ -21,7 +21,7 @@ RUN bdjuno init
 COPY ./yml/prod-config.yaml /root/.bdjuno/config.yaml
 COPY ./yml/prod-genesis.json ./genesis.json
 CMD bdjuno parse genesis-file --genesis-file-path ./genesis.json
-CMD ["bdjuno", "start"]
+CMD bdjuno parse genesis-file --genesis-file-path ./genesis.json && bdjuno start
 
 
 
