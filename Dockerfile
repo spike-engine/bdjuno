@@ -12,8 +12,7 @@ COPY --from=builder /go/src/github.com/forbole/bdjuno/build/bdjuno /usr/bin/bdju
 RUN bdjuno init
 COPY ./yml/dev-config.yaml /root/.bdjuno/config.yaml
 COPY ./yml/dev-genesis.json ./genesis.json
-RUN bdjuno parse genesis-file --genesis-file-path ./genesis.json
-CMD ["bdjuno", "start"]
+CMD bdjuno parse genesis-file --genesis-file-path ./genesis.json && bdjuno start
 
 FROM alpine:latest as prod
 WORKDIR /bdjuno
@@ -21,7 +20,7 @@ COPY --from=builder /go/src/github.com/forbole/bdjuno/build/bdjuno /usr/bin/bdju
 RUN bdjuno init
 COPY ./yml/prod-config.yaml /root/.bdjuno/config.yaml
 COPY ./yml/prod-genesis.json ./genesis.json
-RUN bdjuno parse genesis-file --genesis-file-path ./genesis.json
+CMD bdjuno parse genesis-file --genesis-file-path ./genesis.json
 CMD ["bdjuno", "start"]
 
 

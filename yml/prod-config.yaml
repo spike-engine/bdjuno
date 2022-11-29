@@ -19,7 +19,7 @@ parsing:
     start_height: 1
     average_block_time: 5s
 database:
-    name: bdjuno
+    name: postgres
     host: 192.168.20.2
     port: 5432
     user: postgres
