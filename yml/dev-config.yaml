@@ -1,6 +1,6 @@
 chain:
     bech32_prefix: spike
-    modules: []
+    modules: ["auth","staking","bank","slashing","gov","mint","distribution","pricefeed","feegrant","pruning"]
 node:
     type: remote
     config:
