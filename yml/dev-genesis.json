@@ -232,8 +232,7 @@
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
-            },
-            "tip": null
+            }
           },
           "signatures": [
             "m40d8lhlHDxNt0F5r41tohhynkn4Skelrpd9Wa3dhTc9MRTaQNBNeQY2NcpC9f1EoOlSpaTf4fvfI8AGx/x1yAA="
@@ -299,8 +298,7 @@
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
-            },
-            "tip": null
+            }
           },
           "signatures": [
             "14VUM081hZTywn+sAbA+BEh1WLFVbvJLaVXtuZKG4Ktsp7sijBs2d9nLrr32xs/NEjViuONq0rct6ZFkNIOi2wE="
@@ -366,8 +364,7 @@
               "gas_limit": "200000",
               "payer": "",
               "granter": ""
-            },
-            "tip": null
+            }
           },
           "signatures": [
             "R3Wkp+rMCDGPh8Kvs9/qX4kX3H9UVOYjTemKGRZHUlo2A29ueTvMTmdMYGN/hHgNnx+Dcl/+8BGrIUGOS61vdAE="
@@ -495,8 +492,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "uspike",
-        "min_commission_rate": "0.000000000000000000"
+        "bond_denom": "uspike"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
