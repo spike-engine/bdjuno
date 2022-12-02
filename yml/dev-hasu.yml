@@ -37,7 +37,10 @@ services:
       ## uncomment next line to run console offline (i.e load console assets from server instead of CDN)
       # HASURA_GRAPHQL_CONSOLE_ASSETS_DIR: /srv/console-assets
       ## uncomment next line to set an admin secret
-      # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+      HASURA_GRAPHQL_ADMIN_SECRET: Oasis2022
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+      HASURA_GRAPHQL_UNAUTHORIZED_ROLE: anonymous
+      ACTION_BASE_URL: http://localhost:3000
 volumes:
   db_data:
 
