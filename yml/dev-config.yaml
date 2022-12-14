@@ -21,7 +21,7 @@ parsing:
 database:
     name: postgres
     host: 192.168.20.2
-    port: 15432
+    port: 5432
     user: postgres
     password: oasis2022
     schema: public
