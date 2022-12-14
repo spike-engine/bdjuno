@@ -5,14 +5,12 @@ services:
     container_name: 'postgres_hasu'
     restart: always
     ports:
-      - "5432:5432"
+      - "15432:5432"
     networks:
       default:
         ipv4_address: 192.168.20.2
-    volumes:
-      - db_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_PASSWORD: oasis2022
   graphql-engine:
     image: hasura/graphql-engine:v2.15.1
     container_name: 'graphql'
@@ -26,9 +24,9 @@ services:
         ipv4_address: 192.168.20.3
     environment:
       ## postgres database to store Hasura metadata
-      HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+      HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:oasis2022@postgres:5432/postgres
       ## this env var can be used to add the above postgres database to Hasura as a data source. this can be removed/updated based on your needs
-      PG_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+      PG_DATABASE_URL: postgres://postgres:oasis2022@postgres:5432/postgres
       ## enable the console served by server
       HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
       ## enable debugging mode. It is recommended to disable this in production
@@ -38,11 +36,9 @@ services:
       # HASURA_GRAPHQL_CONSOLE_ASSETS_DIR: /srv/console-assets
       ## uncomment next line to set an admin secret
       HASURA_GRAPHQL_ADMIN_SECRET: Oasis2022
-      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:oasis2022@postgres:5432/postgres
       HASURA_GRAPHQL_UNAUTHORIZED_ROLE: anonymous
       ACTION_BASE_URL: http://192.168.20.6:3000
-volumes:
-  db_data:
 
 networks:
   default:

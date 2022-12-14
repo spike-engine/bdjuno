@@ -1,6 +1,6 @@
 chain:
     bech32_prefix: spike
-    modules: ["auth","staking","bank","slashing","gov","mint","distribution","feegrant","actions","consensus"]
+    modules: ["auth","staking","bank","slashing","gov","mint","distribution","feegrant","actions","consensus","messages"]
 node:
     type: remote
     config:
@@ -21,9 +21,9 @@ parsing:
 database:
     name: postgres
     host: 192.168.20.2
-    port: 5432
+    port: 15432
     user: postgres
-    password: postgrespassword
+    password: oasis2022
     schema: public
     max_open_connections: 10
     max_idle_connections: 5
