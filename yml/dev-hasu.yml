@@ -11,6 +11,7 @@ services:
         ipv4_address: 192.168.20.2
     environment:
       POSTGRES_PASSWORD: oasis2022
+      POSTGRES_USER: postgres
   graphql-engine:
     image: hasura/graphql-engine:v2.15.1
     container_name: 'graphql'
